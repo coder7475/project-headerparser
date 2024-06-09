@@ -28,7 +28,8 @@ app.get('/api/whoami', (req, res) => {
   console.log(req.acceptsLanguages)
   res.json({
     ipaddress: req.ip,
-    'language': "en-US,en;q=0.6"
+    language: "en-US,en;q=0.6",
+    software: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
   })
 })
 
