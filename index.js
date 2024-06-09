@@ -25,8 +25,10 @@ app.get('/api/hello', function (req, res) {
 });
 // who am I api
 app.get('/api/whoami', (req, res) => {
+  console.log(req.acceptsLanguages)
   res.json({
-    ipaddress: req.ip
+    ipaddress: req.ip,
+    'language': "en-US,en;q=0.6"
   })
 })
 
