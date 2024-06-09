@@ -26,7 +26,7 @@ app.get('/api/hello', function (req, res) {
 // who am I api
 app.get('/api/whoami', (req, res) => {
   res.json({
-    ipaddress: req.socket.remoteAddress
+    ipaddress: req.ip
   })
 })
 
